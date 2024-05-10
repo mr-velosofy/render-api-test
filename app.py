@@ -4,7 +4,6 @@ import datetime
 from datetime import datetime
 import pytz
 from dotmap import DotMap
-from keep_alive import keep_alive
 import schedule
 import threading
 import time
