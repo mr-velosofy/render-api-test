@@ -1,6 +1,5 @@
 Flask
 Gunicorn
-requirements-stealth.txt
 python-dotenv
 schedule
 watchdog
