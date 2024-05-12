@@ -41,7 +41,6 @@ def home():
     
 @app.route("/health")
 def health():
-    time.sleep(10)
     return "Health OK :)"
 # @app.route("/test")
 # def test():
