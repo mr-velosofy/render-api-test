@@ -38,7 +38,10 @@ def send_to_discord_webhook(webhook_url, message):
 @app.route("/")
 def home():
     return "Contact <a href='https://discordapp.com/users/311519176655241217/' target='_blank'>@mr.velosofy</a> on discord (will add ReadMe soon)"
-  
+    
+@app.route("/health")
+def health():
+    return "Health OK :)"
 # @app.route("/test")
 # def test():
 #     try:
