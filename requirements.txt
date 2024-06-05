@@ -1,5 +1,4 @@
-Flask
-Gunicorn
+flask==3.0.2
 python-dotenv
 schedule
 watchdog
@@ -11,6 +10,11 @@ idna==3.6
 requests==2.31.0
 urllib3==2.2.0
 pytz
+gunicorn
 datetime
 scrapetube
 chat-downloader
+pymongo
+Flask-SQLAlchemy
+apscheduler
+SQLAlchemy

@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
     />
+    <link rel="icon" href="{{ data.rank_image }}" type="image/x-icon">
     <!-- <title>Valorant Data</title> -->
     <style>
       body {
@@ -43,7 +44,7 @@
 
       p {
         font-size: 2.5em;
-        color: #333;
+        color: #adadad;
         margin-top: 0px;
         margin-bottom: 0px;
         font-family: "Lilita One", cursive;
@@ -93,24 +94,26 @@
   </head>
   <body>
     <div class="img-container">
-      <img src="{{ data.images.large }}" alt="Valorant Rank Icon" />
+      <img src="{{ data.rank_image }}" alt="Valorant Rank Icon" />
       <img
         class="duplicate"
-        src="{{ data.images.large }}"
+        src="{{ data.rank_image }}"
         alt="Valorant Rank Icon Duplicate"
       />
     </div>
-    <p>{{ data.ranking_in_tier }} RR</p>
+    <p style="color: {{ data.color }}">{{ data.current_mmr }}</p>
     <div class="color-input-container">
       <input
         type="text"
         id="hex-color"
         class="color-input"
         placeholder="Enter hex code"
-        value="#ff0000"
+        value="{{ data.color }}"
       />
       <!-- Set default value -->
       <button onclick="applyHexColor()">Apply</button>
     </div>
+    <p style="font-size: 20px; margin-top: 20px;">Colors for your rank theme {{ data.color }} and {{ data.bgcolor }}</p>
   </body>
 </html>
+
